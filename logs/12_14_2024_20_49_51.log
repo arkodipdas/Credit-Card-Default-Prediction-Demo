@@ -1,0 +1,17 @@
+[2024-12-14 20:49:51,648] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.149:5000
+[2024-12-14 20:49:51,648] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-12-14 20:50:12,845] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:50:12] "GET / HTTP/1.1" 200 -
+[2024-12-14 20:51:08,530] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 20:51:08,531] 138 root - INFO - Input data: {'LIMIT_BAL': [100000.0], 'SEX': [1], 'EDUCATION': [2], 'MARRIAGE': [1], 'AGE': [34], 'PAY_0': [0], 'PAY_2': [3], 'PAY_3': [0], 'PAY_4': [2], 'PAY_5': [2], 'PAY_6': [1], 'BILL_AMT1': [10000.0], 'BILL_AMT2': [100000.0], 'BILL_AMT3': [300000.0], 'BILL_AMT4': [10000.0], 'BILL_AMT5': [3000.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [1000.0], 'PAY_AMT2': [0.0], 'PAY_AMT3': [1000.0], 'PAY_AMT4': [2000.0], 'PAY_AMT5': [3000.0], 'PAY_AMT6': [1000.0]}
+[2024-12-14 20:51:08,533] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 20:51:08,695] 36 root - INFO - Data scaled using the preprocessor
+[2024-12-14 20:51:08,710] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:51:08] "POST / HTTP/1.1" 200 -
+[2024-12-14 20:55:00,259] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:55:00] "GET / HTTP/1.1" 200 -
+[2024-12-14 20:55:35,428] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 20:55:35,428] 138 root - INFO - Input data: {'LIMIT_BAL': [1000.0], 'SEX': [1], 'EDUCATION': [2], 'MARRIAGE': [1], 'AGE': [34], 'PAY_0': [0], 'PAY_2': [3], 'PAY_3': [0], 'PAY_4': [2], 'PAY_5': [2], 'PAY_6': [1], 'BILL_AMT1': [10000.0], 'BILL_AMT2': [100000.0], 'BILL_AMT3': [300000.0], 'BILL_AMT4': [10000.0], 'BILL_AMT5': [3000.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [1000.0], 'PAY_AMT2': [0.0], 'PAY_AMT3': [1000.0], 'PAY_AMT4': [2000.0], 'PAY_AMT5': [3000.0], 'PAY_AMT6': [1000.0]}
+[2024-12-14 20:55:35,430] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 20:55:35,441] 36 root - INFO - Data scaled using the preprocessor
+[2024-12-14 20:55:35,441] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:55:35] "POST / HTTP/1.1" 200 -

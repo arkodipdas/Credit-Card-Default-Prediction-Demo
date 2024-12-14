@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CreditcardDefaultPrediction.egg-info/PKG-INFO
+CreditcardDefaultPrediction.egg-info/SOURCES.txt
+CreditcardDefaultPrediction.egg-info/dependency_links.txt
+CreditcardDefaultPrediction.egg-info/requires.txt
+CreditcardDefaultPrediction.egg-info/top_level.txt

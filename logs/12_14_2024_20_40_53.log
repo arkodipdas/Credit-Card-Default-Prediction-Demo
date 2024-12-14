@@ -1,0 +1,64 @@
+[2024-12-14 20:40:53,693] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.149:5000
+[2024-12-14 20:40:53,693] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-12-14 20:41:04,892] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:41:04] "GET / HTTP/1.1" 200 -
+[2024-12-14 20:41:52,899] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 20:41:52,899] 138 root - INFO - Input data: {'LIMIT_BAL': [100000.0], 'SEX': [1], 'EDUCATION': [1], 'MARRIAGE': [2], 'AGE': [24], 'PAY_0': [-1], 'PAY_2': [1], 'PAY_3': [3], 'PAY_4': [1], 'PAY_5': [0], 'PAY_6': [1], 'BILL_AMT1': [2000.0], 'BILL_AMT2': [1000.0], 'BILL_AMT3': [200.0], 'BILL_AMT4': [200.0], 'BILL_AMT5': [200.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [2500.0], 'PAY_AMT2': [2500.0], 'PAY_AMT3': [20000.0], 'PAY_AMT4': [2000.0], 'PAY_AMT5': [1000.0], 'PAY_AMT6': [100.0]}
+[2024-12-14 20:41:52,906] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 20:41:52,906] 44 root - INFO - Exception has occurred in the predict method
+[2024-12-14 20:41:52,906] 1744 app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py", line 31, in predict
+    preprocessor = load(preprocessor_path)
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\preprocessor.joblib'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\app.py", line 54, in predict_datapoints
+    prediction = predict_pipeline.predict(final_data)
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py", line 45, in predict
+    raise CustomException(e, sys)
+src.CreditcardDefaultPrediction.exception.CustomException: Error occured in python script name [c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py] line number [31] error message [[Errno 2] No such file or directory: 'artifacts\\preprocessor.joblib']
+[2024-12-14 20:41:52,906] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:41:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2024-12-14 20:42:12,006] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 20:42:12,006] 138 root - INFO - Input data: {'LIMIT_BAL': [100000.0], 'SEX': [1], 'EDUCATION': [1], 'MARRIAGE': [2], 'AGE': [24], 'PAY_0': [-1], 'PAY_2': [1], 'PAY_3': [3], 'PAY_4': [1], 'PAY_5': [0], 'PAY_6': [1], 'BILL_AMT1': [2000.0], 'BILL_AMT2': [1000.0], 'BILL_AMT3': [200.0], 'BILL_AMT4': [200.0], 'BILL_AMT5': [200.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [2500.0], 'PAY_AMT2': [2500.0], 'PAY_AMT3': [20000.0], 'PAY_AMT4': [2000.0], 'PAY_AMT5': [1000.0], 'PAY_AMT6': [100.0]}
+[2024-12-14 20:42:12,008] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 20:42:12,009] 44 root - INFO - Exception has occurred in the predict method
+[2024-12-14 20:42:12,009] 1744 app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py", line 31, in predict
+    preprocessor = load(preprocessor_path)
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\preprocessor.joblib'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\arkod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\app.py", line 54, in predict_datapoints
+    prediction = predict_pipeline.predict(final_data)
+  File "c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py", line 45, in predict
+    raise CustomException(e, sys)
+src.CreditcardDefaultPrediction.exception.CustomException: Error occured in python script name [c:\Users\arkod\Desktop\Test\Credit_Card_Default_Detection\src\CreditcardDefaultPrediction\pipelines\prediction_pipeline.py] line number [31] error message [[Errno 2] No such file or directory: 'artifacts\\preprocessor.joblib']
+[2024-12-14 20:42:12,011] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 20:42:12] "[35m[1mPOST / HTTP/1.1[0m" 500 -

@@ -1,0 +1,18 @@
+[2024-12-14 21:10:51,701] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.149:5000
+[2024-12-14 21:10:51,701] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-12-14 21:11:13,856] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 21:11:13] "GET / HTTP/1.1" 200 -
+[2024-12-14 21:12:35,988] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 21:12:35,988] 138 root - INFO - Input data: {'LIMIT_BAL': [100000.0], 'SEX': [1], 'EDUCATION': [2], 'MARRIAGE': [2], 'AGE': [30], 'PAY_0': [-2], 'PAY_2': [-2], 'PAY_3': [-2], 'PAY_4': [-1], 'PAY_5': [2], 'PAY_6': [1], 'BILL_AMT1': [0.0], 'BILL_AMT2': [500.0], 'BILL_AMT3': [400.0], 'BILL_AMT4': [300.0], 'BILL_AMT5': [200.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [0.0], 'PAY_AMT2': [0.0], 'PAY_AMT3': [0.0], 'PAY_AMT4': [0.0], 'PAY_AMT5': [10.0], 'PAY_AMT6': [100.0]}
+[2024-12-14 21:12:36,001] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 21:12:36,465] 36 root - INFO - Data scaled using the preprocessor
+[2024-12-14 21:12:36,473] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 21:12:36] "POST / HTTP/1.1" 200 -
+[2024-12-14 21:21:14,981] 110 root - INFO - Creating a dictionary from input data
+[2024-12-14 21:21:14,982] 138 root - INFO - Input data: {'LIMIT_BAL': [100000.0], 'SEX': [1], 'EDUCATION': [2], 'MARRIAGE': [2], 'AGE': [30], 'PAY_0': [-2], 'PAY_2': [-2], 'PAY_3': [-2], 'PAY_4': [-1], 'PAY_5': [2], 'PAY_6': [1], 'BILL_AMT1': [0.0], 'BILL_AMT2': [500.0], 'BILL_AMT3': [400.0], 'BILL_AMT4': [300.0], 'BILL_AMT5': [200.0], 'BILL_AMT6': [100.0], 'PAY_AMT1': [0.0], 'PAY_AMT2': [0.0], 'PAY_AMT3': [0.0], 'PAY_AMT4': [0.0], 'PAY_AMT5': [10.0], 'PAY_AMT6': [100.0]}
+[2024-12-14 21:21:14,983] 142 root - INFO - Data successfully converted into DataFrame
+[2024-12-14 21:21:14,994] 36 root - INFO - Data scaled using the preprocessor
+[2024-12-14 21:21:14,996] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 21:21:14] "POST / HTTP/1.1" 200 -
+[2024-12-14 21:21:16,964] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 21:21:16] "GET / HTTP/1.1" 200 -
+[2024-12-14 21:21:19,208] 224 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2024 21:21:19] "GET / HTTP/1.1" 200 -
